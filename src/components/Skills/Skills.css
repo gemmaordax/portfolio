@@ -72,7 +72,7 @@
 /*************** Marquee Section ***************/
 .marquee {
     padding: 1.2rem 0;
-    width: 90vw;
+    width: 90vw !important;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -192,7 +192,7 @@
     }
 
     .marquee {
-        width: 82vw;
+        width: 82vw !important;
     }
 }
 
