@@ -1,0 +1,131 @@
+.projects {
+    padding: 4rem 2rem;
+    background-color: var(--clr-bg);
+    color: var(--clr-fg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.projects h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--clr-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--clr-bg-2);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.projects-container .project-card .project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+ 
+}
+
+.project-details {
+    padding: 1.5rem;
+}
+
+.project-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.project-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.project-buttons .live-demo-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 5px;
+    letter-spacing: 0.15rem;
+    width: 180px; /* Fija un ancho consistente */
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--clr-primary);
+    border: 3px solid var(--clr-primary);
+    border-radius: 50px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.project-buttons .live-demo-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-primary);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.4s ease;
+    z-index: 0;
+}
+
+.project-buttons .live-demo-btn:hover::before {
+    transform: scaleX(1);
+}
+.project-buttons span {
+    position: relative;
+    z-index: 1;
+  }
+.project-buttons .live-demo-btn:hover {
+    color: var(--clr-bg) !important; /* Cambia el color del texto al hacer hover */
+}
+
+.project-buttons .live-demo-btn .live-demo-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.project-buttons .live-demo-btn:hover .live-demo-icon {
+    transform: scale(1.2);
+}
+
+.project-buttons .github-btn {
+    font-size: 2.5rem;
+    color: var(--clr-accent);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.github-btn:hover {
+    color: var(--clr-primary);
+    transform: scale(1.1);
+}
+
+@media (max-width: 848px) {
+
+    .projects h2 {
+        font-size: 2.5rem;
+    } 
+  } 

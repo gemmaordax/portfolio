@@ -1,0 +1,138 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    background: var(--clr-bg-alt);
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-logo {
+    background: none;
+    border: none;
+}
+
+.navbar.scrolled {
+    background: var(--clr-navbar-scrolled);
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+.navbar-links {
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.navbar-links li {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding-right: 20px;
+    text-align: center;
+    transition: color 0.3s ease;
+    
+
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--clr-fg);
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+    
+}
+
+.navbar-links li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--clr-primary);
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar-links li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-links li a:hover {
+    color: var(--clr-primary);
+}
+
+.navbar-links li svg {
+    font-size: 1.2rem;
+}
+
+.hamburger {
+    display: none;
+    z-index: 10;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-right: 10px;
+    background: none;
+    border: none;
+}
+
+.navbar-links.open {
+    left: 0;
+    top: 78px;
+    height: calc(100vh - 78px);
+    margin: 0;
+    width: 300px;
+}
+
+.theme-toggle:hover {
+    color: var(--clr-primary);
+}
+
+.main-content.blur {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+@media (max-width: 848px) {
+    .navbar-links {
+        position: fixed;
+        left: -100%;
+        background: var(--clr-bg-alt);
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 60px;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 5;
+    }
+
+    .navbar-links.open {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 15;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar-logo img {
+        height: 35px;
+    }
+}

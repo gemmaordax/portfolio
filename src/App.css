@@ -1,33 +1,83 @@
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: var(--clr-fg);
+  background-color: var(--clr-bg);
+  width: 100%;
+  margin: 0; /* Asegúrate de que no haya margen */
+  padding: 0; /* Asegúrate de que no haya padding */
+  min-height: 100vh; /* Para ocupar toda la altura de la pantalla */
 }
 
+.light {
+  --clr-bg: #fcfcfc;
+  --clr-bg-alt: hsl(0, 0%, 100%);
+  --clr-bg-2:#f5f5f5;
+  --clr-fg: #555;
+  --clr-fg-alt: #444;
+  --clr-primary: #2978b5;
+  --clr-navbar-scrolled: rgba(255, 255, 255, 0.8);
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+}
+/*
+.dark {
+  --clr-bg: #2e192e;
+  --clr-bg-alt: rgb(67, 42, 76);
+  --clr-bg-2:#38223e;
+  --clr-fg: #d0bddd;
+  --clr-fg-alt: rgba(204, 157, 229, 0.883);
+  --clr-primary: #bb70f0;
+  --clr-navbar-scrolled: rgba(64, 42, 76, 0.8); 
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}*/
+
+
+.dark {
+  --clr-bg: #23283e;
+  --clr-bg-alt: rgb(42, 47, 76);
+  --clr-bg-2:#1f2336;
+  --clr-fg: #bdbddd;
+  --clr-fg-alt: #cdcdff;
+  --clr-primary: #90a0d9;
+  --clr-navbar-scrolled: rgba(42, 47, 76, 0.8); 
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+}
+
+/* Estilos del Logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Estilos de Animación */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Estilos de Cabecera */
 .App-header {
-  background-color: #282c34;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
+/* Enlaces */
 .App-link {
-  color: #61dafb;
+  color: none;
 }
 
+/* Animación del Logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

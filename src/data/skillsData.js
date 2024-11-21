@@ -1,0 +1,15 @@
+export const skillsData = [
+  { name: "HTML", image: "html.svg" },
+  { name: "Figma", image: "figma.svg" },
+  { name: "Javascript", image: "javascript.svg" },
+  { name: "CSS", image: "css.svg" },
+  { name: "React", image: "react.svg" },
+  { name: "Java", image: "java.svg" },
+  { name: "Firebase", image: "firebase.svg" },
+  { name: "Python", image: "python.svg" },
+  { name: "Wordpress", image: "wordpress.svg" },
+  { name: "Microsoft Office", image: "microsoftoffice.svg" },
+  { name: "Creative Suite", image: "creativesuite.svg" },
+  { name: "MySQL", image: "mysql.svg" },
+  { name: "Tailwind", image: "tailwind.svg" },
+  { name: "Bootstrap", image: "bootstrap.svg" }];

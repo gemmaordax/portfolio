@@ -1,0 +1,14 @@
+{
+  "es": {
+    "about": "Sobre mí",
+    "skills": "Habilidades y Servicios",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "en": {
+    "about": "About Me",
+    "skills": "Skills & Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}

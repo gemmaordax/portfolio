@@ -1,0 +1,193 @@
+/* Contenedor principal de la sección About */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 50px 50px;
+  background-color: var(--clr-bg);
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  gap: 50px;
+  padding-top: 60px;
+}
+
+/* Sección izquierda: texto e iconos */
+.about-right {
+  flex: 1;
+  text-align: left;
+  max-width: 500px;
+  width: 100%;
+  min-width: 300px; 
+}
+
+/* Título */
+.about-title {
+  display: flex;
+  margin-bottom: 10px;
+  white-space: nowrap; 
+  max-width: 100%;
+}
+
+.about-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-right: 16px;
+}
+
+.typed-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+
+/* Descripción */
+.about-description {
+  width: 100%; 
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--clr-fg); 
+  margin-bottom: 30px;
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+}
+
+/* Iconos sociales */
+.about-socials {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-socials-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.about-social-icon {
+  font-size: 2rem;
+  color: var(--clr-accent);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about-social-icon:hover {
+  color: var(--clr-primary);
+  transform: scale(1.1);
+}
+
+/* Botón para descargar CV */
+.about-cv-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  gap: 5px;
+  letter-spacing: 0.15rem;
+  width: 180px; /* Fija un ancho consistente */
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-primary);
+  border: 3px solid var(--clr-primary);
+  border-radius: 50px;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-cv-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-primary);
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+.about-cv-button:hover::before {
+  transform: scaleX(1);
+}
+
+.about-cv-button span,
+.about-cv-icon {
+  position: relative;
+  z-index: 1;
+}
+
+.about-cv-button:hover {
+  color: var(--clr-bg);
+}
+
+.about-cv-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+.about-cv-icon.icon-checked {
+  transform: scale(1.2); 
+}
+
+/* Sección derecha: imagen */
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Media Queries */
+@media (max-width: 756px) {
+  .about-container {
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-right {
+    text-align: center;
+    max-width: 90%; 
+
+  }
+  .about-image {
+    width: 250px; 
+    height: 250px; 
+  }
+  .about-description {
+    font-size: 1rem; 
+  }
+ 
+  .about-title h2,
+  .typed-text {
+    font-size: 1.8rem;
+  }
+
+  .about-socials {
+    flex-direction: column;
+  }
+
+  .about-cv-button {
+    margin-top: 20px;
+  }
+}
