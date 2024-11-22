@@ -23,7 +23,7 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="live-demo-btn"
-                ><span> Live Demo</span>
+                ><span> LIVE DEMO</span>
                  
                 </a>
                 <a

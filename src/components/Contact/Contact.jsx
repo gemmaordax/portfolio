@@ -1,3 +1,11 @@
+/**
+ * @file Contact.js
+ * @description Componente de formulario de contacto en React.
+ * Este archivo contiene la implementación de un formulario para enviar mensajes a través de EmailJS.
+ * 
+ * @author Gemma Ordax
+ */
+
 import React, { useState } from "react";
 import "./Contact.css";
 import { FaEnvelope } from "react-icons/fa";

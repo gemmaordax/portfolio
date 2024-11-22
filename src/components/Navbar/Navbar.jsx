@@ -102,7 +102,7 @@ function Navbar({ isDarkMode, toggleTheme }) {
 
       <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
         <li><Link to='about' smooth={true} duration={500} onClick={handleLinkClick}>ABOUT</Link></li>
-        <li><Link to='skills' smooth={true} duration={500} onClick={handleLinkClick}>SKILLS & SERVICES</Link></li>
+        <li><Link to='skills' smooth={true} duration={500} onClick={handleLinkClick}>SKILLS</Link></li>
         <li><Link to='projects' smooth={true} duration={500} onClick={handleLinkClick}>PROJECTS</Link></li>
         <li><Link to='contact' smooth={true} duration={500} onClick={handleLinkClick}>CONTACT</Link></li>
         <li onClick={toggleTheme} className="theme-toggle">{isDarkMode ? <FaSun /> : <FaMoon />}</li>

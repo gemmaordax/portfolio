@@ -1,3 +1,4 @@
+/* Navbar */
 .navbar {
     display: flex;
     align-items: center;
@@ -5,14 +6,10 @@
     padding: 15px 50px;
     position: fixed;
     top: 0;
-    left: 0px;
+    left: 0;
     width: 100%;
     z-index: 100;
     background: var(--clr-bg-alt);
-}
-
-.navbar-logo img {
-    height: 40px;
 }
 
 .navbar-logo {
@@ -20,17 +17,23 @@
     border: none;
 }
 
+.navbar-logo img {
+    height: 40px;
+}
+
+/* Navbar scrolled state */
 .navbar.scrolled {
     background: var(--clr-navbar-scrolled);
     box-shadow: var(--shadow);
     transition: box-shadow 0.4s ease, background-color 0.4s ease;
 }
 
+/* Navbar Links */
 .navbar-links {
     display: flex;
     margin-left: 30px;
     align-items: center;
-    
+    background: transparent;
 }
 
 .navbar-links li {
@@ -49,9 +52,9 @@
     text-align: center;
     padding-bottom: 10px;
     position: relative;
-    
 }
 
+/* Hover effects on navbar links */
 .navbar-links li a::before {
     content: '';
     position: absolute;
@@ -76,6 +79,7 @@
     font-size: 1.2rem;
 }
 
+/* Hamburger menu */
 .hamburger {
     display: none;
     z-index: 10;
@@ -91,7 +95,7 @@
     top: 78px;
     height: calc(100vh - 78px);
     margin: 0;
-    width: 300px;
+    width: 280px;
 }
 
 .theme-toggle:hover {
@@ -103,7 +107,8 @@
     pointer-events: none;
 }
 
-@media (max-width: 848px) {
+/* Media Queries */
+@media (max-width: 800px) {
     .navbar-links {
         position: fixed;
         left: -100%;

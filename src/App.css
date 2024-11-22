@@ -21,10 +21,23 @@ body {
   --clr-bg-2:#f5f5f5;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  --clr-primary: rgb(41, 120, 181);
   --clr-navbar-scrolled: rgba(255, 255, 255, 0.8);
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  
+  --scrollToTop:rgba(41, 120, 181,0.5);
+}
+
+.dark {
+  --clr-bg: #23283e;
+  --clr-bg-alt: rgb(42, 47, 76);
+  --clr-bg-2:#1f2336;
+  --clr-fg: #bdbddd;
+  --clr-fg-alt: #cdcdff;
+  --clr-primary: rgb(144, 160, 217);
+  --clr-navbar-scrolled: rgba(42, 47, 76, 0.8); 
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --scrollToTop:rgba(144, 160, 217,0.5);
 }
 /*
 .dark {
@@ -39,19 +52,6 @@ body {
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }*/
 
-
-.dark {
-  --clr-bg: #23283e;
-  --clr-bg-alt: rgb(42, 47, 76);
-  --clr-bg-2:#1f2336;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
-  --clr-navbar-scrolled: rgba(42, 47, 76, 0.8); 
-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    
-}
 
 /* Estilos del Logo */
 .App-logo {

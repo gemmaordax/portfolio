@@ -1,8 +1,10 @@
 /**
  * @file About.js
- * @author [Gemma Ordax]
+ * @description Componente "About" en React.
+ * Este archivo contiene la implementación de una sección de "Sobre mí" con una breve descripción, redes sociales, y un botón de descarga de CV.
+ * 
+ * @author Gemma Ordax
  */
-
 import React, { useState } from "react";
 import { ReactTyped } from "react-typed";
 import {
@@ -63,7 +65,7 @@ const About = () => {
           <div className="about-socials">
             <div className="about-socials-icons">
               <a
-                href="www.linkedin.com/in/gemmaordax"
+                href="https://www.linkedin.com/in/gemmaordax"
                 target="_blank"
                 rel="noopener noreferrer"
               >

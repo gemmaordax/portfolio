@@ -1,12 +1,22 @@
+/**
+ * @file App.js
+ * @description Este componente principal de la aplicación maneja el estado global del tema (oscuro o claro), 
+ * la apertura del menú de navegación, y la gestión del cambio de favicon basado en el tema. 
+ * Además, incluye todos los componentes de la aplicación como Navbar, About, Skills, Projects, Contact, Footer, 
+ * y el botón para volver al inicio.
+ * 
+ * @author Gemma Ordax
+ */
 import React, { useState, useEffect } from "react";
 import "./App.css";
+
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
-
+import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Projects from "./components/Projects/Projects";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton"; // Importa el botón
 
 function App() {
   // Estado para el modo oscuro o claro
@@ -75,6 +85,7 @@ function App() {
         <Projects isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
         <Contact isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       </main>
+      <ScrollToTopButton />
       <Footer isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
     </div>
   );

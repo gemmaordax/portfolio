@@ -1,3 +1,12 @@
+/**
+ * @file Skills.js
+ * @description Componente que muestra las habilidades y servicios en la página.
+ * Este archivo contiene la implementación de un componente que utiliza un efecto de
+ * desplazamiento continuo para mostrar habilidades y presenta los servicios ofrecidos
+ * con iconos correspondientes.
+ * 
+ * @author Gemma Ordax
+ */
 import React from "react";
 import Marquee from "react-fast-marquee";
 import "./Skills.css";
