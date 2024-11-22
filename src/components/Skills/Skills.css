@@ -29,6 +29,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    max-width: 100vw;
 }
 
 .skill-box {
@@ -72,7 +74,7 @@
 /*************** Marquee Section ***************/
 .marquee {
     padding: 1.2rem 0;
-    width: 90vw;
+    width: 90vw !important;
     overflow: hidden;
     white-space: nowrap;
 }

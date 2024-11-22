@@ -19,7 +19,7 @@ const projects = [
     },
     {
       id: 3,
-      name: "Mini Juego",
+      name: "Mini Game",
       image: project2Image , // Ruta de la imagen del proyecto
       liveDemoLink: "https://gemmaordax.github.io/escape_room/", // Enlace al demo en vivo
       githubLink: "https://github.com/gemmaordax/escape_room", // Enlace al repositorio de GitHub

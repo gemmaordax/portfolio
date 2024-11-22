@@ -7,6 +7,12 @@
   margin: 0; /* Asegúrate de que no haya margen */
   padding: 0; /* Asegúrate de que no haya padding */
   min-height: 100vh; /* Para ocupar toda la altura de la pantalla */
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .light {
