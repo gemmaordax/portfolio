@@ -75,14 +75,14 @@
 .marquee {
     padding: 1.2rem 0;
     width: 90vw !important;
-    overflow: hidden !important;
+    overflow: hidden;
     white-space: nowrap;
 }
 
 .marquee-container {
     position: relative;
     overflow: hidden;
-    max-width: 100vw;
+    max-width: 100vw  !important;
 }
 
 .marquee-container::before,
@@ -195,7 +195,7 @@
     }
 
     .marquee {
-        width: 82vw;
+        width: 82vw  !important;
     }
 }
 
