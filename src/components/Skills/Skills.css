@@ -74,7 +74,7 @@
 /*************** Marquee Section ***************/
 .marquee {
     padding: 1.2rem 0;
-    width: 90vw !important;
+    width: 96vw !important;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -194,9 +194,7 @@
         font-size: 1.1rem;
     }
 
-    .marquee {
-        width: 82vw  !important;
-    }
+
 }
 
 @media (max-width: 480px) {
