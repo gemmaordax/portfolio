@@ -30,7 +30,7 @@
     justify-content: center;
     gap: 2rem;
     overflow-x: hidden; 
-    max-width: 100vw;
+    width: 100vw !important; 
 }
 
 .skill-box {
@@ -75,13 +75,14 @@
 .marquee {
     padding: 1.2rem 0;
     width: 90vw !important;
-    overflow: hidden;
+    overflow: hidden !important;
     white-space: nowrap;
 }
 
 .marquee-container {
     position: relative;
     overflow: hidden;
+    max-width: 100vw;
 }
 
 .marquee-container::before,
