@@ -29,7 +29,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    overflow-x: hidden; 
     max-width: 100vw;
 }
 
