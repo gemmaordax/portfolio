@@ -98,6 +98,10 @@
     width: 280px;
 }
 
+.theme-toggle{
+background: transparent;
+}
+
 .theme-toggle:hover {
     color: var(--clr-primary);
 }
