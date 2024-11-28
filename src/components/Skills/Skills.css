@@ -65,6 +65,8 @@
     font-weight: bold;
     color: var(--clr-alt);
     transition: color 0.3s ease;
+    white-space: pre-line; /* Permite que los saltos de línea sean visibles */
+    text-align: center;
   }
   
   .skill-box:hover h3 {
