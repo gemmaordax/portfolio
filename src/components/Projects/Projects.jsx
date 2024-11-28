@@ -1,12 +1,20 @@
+/**
+ * @file Projects.js
+ * @description Componente que muestra una lista de proyectos con detalles interactivos. * 
+ * @author Gemma Ordax
+ */
+
 import React, { useState, useRef } from "react";
 import { FaGithub } from "react-icons/fa";
 import projects from "../../data/projectsData";
 import "./Projects.css";
 
 function Projects() {
+    // Maneja el estado del proyecto seleccionado
   const [selectedProject, setSelectedProject] = useState(null); 
   const detailsRef = useRef(null);
 
+    // Cambia el proyecto seleccionado y hace scroll a la sección de detalles
   const handleProjectClick = (project) => {
     setSelectedProject(project); 
     setTimeout(() => {
@@ -17,7 +25,7 @@ function Projects() {
   return (
     <section className="projects" ref={detailsRef}>
             <h2>Projects</h2>
-      {/* Nueva sección para mostrar detalles */}
+      {/* Sección para mostrar detalles */}
       <div
         className="project-details-section"
         style={{ display: selectedProject ? "flex" : "none" }} 
