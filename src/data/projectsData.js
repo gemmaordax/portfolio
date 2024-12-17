@@ -3,11 +3,13 @@
 import project1Image from "../assets/projects/project1_h.png";
 import project2Image from "../assets/projects/project2_h.png";
 import project3Image from "../assets/projects/project3_h.png";
+import project4Image from "../assets/projects/project4_h.jpeg";
 
 //MOCKUP IMAGES
 import mockup1Image from "../assets/projects/mockup1.png";
 import mockup2Image from "../assets/projects/mockup2.png";
 import mockup3Image from "../assets/projects/mockup3.png";
+import mockup4Image from "../assets/projects/mockup4.png";
 
 
 const projects = [
@@ -22,6 +24,14 @@ const projects = [
     },
     {
       id: 2,
+      name: "Weather App",
+      image: project4Image ,
+      liveDemoLink: "https://gemmaordax.github.io/weather_app/", 
+      githubLink: "https://github.com/gemmaordax/weather_app", 
+      mockup: mockup4Image,
+      description: "This weather application allows users to check the current weather based on their location or by manually searching for a city. It uses the OpenWeatherMap API to fetch weather data and the Unsplash API to display a background image of the city.\nThe app includes features such as temperature, humidity, wind speed, and feels-like temperature. It also handles geolocation, displaying the weather for the user's current location by default.",    },
+    {
+      id: 3,
       name: "Escape Room",
       image: project2Image ,
       liveDemoLink: "https://gemmaordax.github.io/escape_room/", 
