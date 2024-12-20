@@ -87,7 +87,7 @@ const About = () => {
               </a>
             </div>
             <a
-              href="/CV_GemmaOrdax.pdf"
+             href={`${process.env.PUBLIC_URL}/CV_GemmaOrdax.pdf`}
               className={`about-cv-button ${isClicked ? "clicked" : ""}`}
               onClick={handleCVDownload}
               download
