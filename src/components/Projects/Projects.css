@@ -60,7 +60,7 @@
 .project-buttons {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .project-buttons .live-demo-btn {
@@ -113,14 +113,60 @@
 }
 
 .project-buttons .github-btn {
-    font-size: 2.5rem;
-    color: var(--clr-accent);
     transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    font-size: 2rem;
+    color: var(--clr-bg);
+    border: 3px solid var(--clr-primary);
+    border-radius: 50px;
+    background: var(--clr-primary);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .project-buttons .github-btn:hover {
-    color: var(--clr-primary);
     transform: scale(1.1);
+}
+
+/* Technologies Section */
+.project-technologies{
+    margin-bottom: 0,5rem;
+}
+
+.project-technologies h3 {
+    font-size: 1.5rem;
+    color: var(--clr-primary);
+    margin-bottom: 0.5rem;
+}
+
+.project-technologies ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-technologies li {
+    background-color: var(--clr-bg-2);
+    color: var(--clr-fg);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.project-technologies li:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-bg);
 }
 
 /* Project Details Section */
@@ -162,7 +208,8 @@
     font-size: 1.2rem;
     color: var(--clr-fg);
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    
 }
 
 .project-mockup {
