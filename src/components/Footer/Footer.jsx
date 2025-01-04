@@ -8,15 +8,19 @@
 
 import React from "react";
 import "./Footer.css";
+import { useLanguage } from "../../context/LanguageContext";
+import translations from "../../i18n/translations";
 
 function Footer() {
+  const { language } = useLanguage();
+  const t = translations[language];
   return (
     <div className="footer">
       {/* Mensaje de pie de página con el corazón y nombre del autor */}
       <p>
-        Made with
+       {t.made}
         <span>❤</span>
-        by <p style={{ fontWeight: "bold" }}>Gemma Ordax</p>
+        {t.por} <p style={{ fontWeight: "bold" }}>Gemma Ordax</p>
       </p>
     </div>
   );

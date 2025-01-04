@@ -41,6 +41,7 @@
 }
 
 .form-group label {
+  margin-left: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--clr-primary);

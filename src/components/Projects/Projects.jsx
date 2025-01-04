@@ -1,12 +1,24 @@
-import React, { useState, useRef } from "react";
-import { FaCode } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa";
-import projects from "../../data/projectsData";
+import React, { useState, useEffect, useRef } from "react";
+import { FaCode, FaFigma } from "react-icons/fa";
+import projectsData from "../../data/projectsData";
 import "./Projects.css";
+import { useLanguage } from "../../context/LanguageContext";
+import translations from "../../i18n/translations";
 
 function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
+    const [projects, setProjects] = useState([]);
     const detailsRef = useRef(null);
+
+    const { language } = useLanguage();
+    const t = translations[language];
+
+    // Actualizar proyectos cuando el idioma cambie
+    useEffect(() => {
+        const selectedProjects = projectsData[language];
+        setProjects(selectedProjects || []);
+        setSelectedProject(null); 
+    }, [language]);
 
     const handleProjectClick = (project) => {
         setSelectedProject(project);
@@ -17,7 +29,7 @@ function Projects() {
 
     return (
         <section className="projects" ref={detailsRef}>
-            <h2>Projects</h2>
+            <h2>{t.projectsTitle}</h2>
             <div
                 className="project-details-section"
                 style={{ display: selectedProject ? "flex" : "none" }}
@@ -33,7 +45,7 @@ function Projects() {
                             </div>
                             {/* Section for Technologies Used */}
                             <div className="project-technologies">
-                                <h3>Technologies Used:</h3>
+                                <h3>{t.technologies}</h3>
                                 <ul>
                                     {selectedProject.technologies && selectedProject.technologies.map((tech, index) => (
                                         <li key={index}>{tech}</li>

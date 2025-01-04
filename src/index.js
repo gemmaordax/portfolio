@@ -2,11 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom'; // Importa BrowserRouter
+import { BrowserRouter } from 'react-router-dom'; 
+import { LanguageProvider } from "./context/LanguageContext";
 
 ReactDOM.render(
-  <BrowserRouter> {/* Envuelve tu aplicación con BrowserRouter */}
+
+  <BrowserRouter> 
+    <LanguageProvider>
     <App />
+    </LanguageProvider>
   </BrowserRouter>,
   document.getElementById('root')
 );
+
+

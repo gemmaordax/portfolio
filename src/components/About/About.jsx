@@ -16,9 +16,13 @@ import {
 } from "react-icons/fa";
 import Perfil from "../../assets/perfil.jpg";
 import "./About.css";
+import { useLanguage } from "../../context/LanguageContext";
+import translations from "../../i18n/translations";
 
 const About = () => {
   const [isClicked, setIsClicked] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   // Función que maneja el clic en el botón de descarga
   const handleCVDownload = (e) => {
@@ -37,29 +41,17 @@ const About = () => {
         {/* Sección izquierda con la información */}
         <div className="about-right">
           <div className="about-title">
-            <h2>I'm a </h2>
+            <h2>{t.aboutMe}</h2>
             <ReactTyped
               className="typed-text"
-              strings={[
-                "Web Developer",
-                "UI/UX Designer",
-                "Video Editor",
-                "Graphic Designer",
-              ]}
+              strings={t.roles}
               typeSpeed={90}
               backSpeed={50}
               loop
             />
           </div>
           <p className="about-description">
-            With a solid background in web development, graphic design, and
-            audiovisual production, I possess a wide range of skills that enable
-            me to merge these fields to create comprehensive solutions in web
-            development projects. My previous experience as a customer-facing
-            administrator has equipped me with abilities such as patience,
-            handling of situations, and excellent interpersonal skills, crucial
-            for ensuring effective communication and client satisfaction in all
-            projects I undertake.
+          {t.aboutDescription}
           </p>
           {/* Redes sociales y botón de CV */}
           <div className="about-socials">
@@ -92,7 +84,7 @@ const About = () => {
               onClick={handleCVDownload}
               download
             >
-              <span>RESUME</span>
+              <span>{t.resume}</span>
               <i className={`about-cv-icon ${isClicked ? "icon-checked" : ""}`}>
                 {isClicked ? <FaCheck /> : <FaDownload />}
               </i>

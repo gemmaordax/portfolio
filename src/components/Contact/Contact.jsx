@@ -10,8 +10,13 @@ import React, { useState } from "react";
 import "./Contact.css";
 import { FaEnvelope } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
+import { useLanguage } from "../../context/LanguageContext";
+import translations from "../../i18n/translations";
 
 function Contact() {
+
+  const { language } = useLanguage();
+  const t = translations[language];
   // Estado para almacenar los datos del formulario
   const [formData, setFormData] = useState({
     name: "",
@@ -47,7 +52,7 @@ function Contact() {
               response.status,
               response.text
             );
-            setSuccessMessage("Your message has been sent successfully!");
+            setSuccessMessage(t.successMessage);
             setFormData({
               name: "",
               email: "",
@@ -57,7 +62,7 @@ function Contact() {
           },
           (error) => {
             console.error("Error al enviar el email:", error);
-            setSuccessMessage("Failed to send message. Please try again.");
+            setSuccessMessage(t.failedMessage);
           }
         );
     }
@@ -66,50 +71,50 @@ function Contact() {
   return (
     <div className="contact">
       <div className="contact-header">
-        <h2>Contact Me</h2>
+        <h2>{t.contactMe}</h2>
       </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Your Name</label>
+          <label htmlFor="name">{t.contactName}</label>
           <input
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="What's your name?"
+            placeholder={t.phName}
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="email">Your Email</label>
+          <label htmlFor="email">{t.contactEmail}</label>
           <input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="What's your email?"
+            placeholder={t.phEmail}
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="message">Your Message</label>
+          <label htmlFor="message">{t.contactMessage}</label>
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="What's your message?"
+            placeholder={t.phMessage}
             required
           />
         </div>
 
         <div className="form-footer">
           <button type="submit" className="submit-btn">
-            <span>SEND</span>
+            <span>{t.contactSubmit}</span>
             <i className="send-icon">
               <FaEnvelope />
             </i>
