@@ -86,11 +86,12 @@ function Projects() {
                         key={project.id}
                         onClick={() => handleProjectClick(project)}
                     >
-                        <div className="project-image">
-                            <img src={project.image} alt={project.name} />
-                        </div>
-                        <div className="project-details">
+                        <div className="project-hover">
+                            <img src={project.mockup} alt={project.name} />
                             <h3>{project.name}</h3>
+                        </div>
+                        <div className="project-title">
+                            <span>{project.name}</span>
                         </div>
                     </div>
                 ))}
