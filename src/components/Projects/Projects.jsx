@@ -17,7 +17,7 @@ function Projects() {
     useEffect(() => {
         const selectedProjects = projectsData[language];
         setProjects(selectedProjects || []);
-        setSelectedProject(null); 
+       setSelectedProject(null); 
     }, [language]);
 
     const handleProjectClick = (project) => {
