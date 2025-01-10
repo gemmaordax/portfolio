@@ -38,7 +38,7 @@ const projectsData = {
     },
     {
       id: 3,
-      name: "Figma Parallax",
+      name: "Figma Animation",
       image: project3Image,
       liveDemoLink:
         "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=0%3A1&node-id=2800-197&viewport=779%2C80%2C0.07&t=2xw7AL3OgnOQZ3dl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2800%3A197",
@@ -46,7 +46,7 @@ const projectsData = {
         "https://www.figma.com/design/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=0-1&t=Gxxa0WdJihWBUHb1-1",
       mockup: mockup3Image,
       description:
-        "This project is a practical exercise designed to apply basic tools of web design, frontend development, and databases. Its goal is to reinforce fundamental knowledge in programming and design.\nThe project consists of a platform where users must register to access the game. Once registered, they can participate in the interactive game, which combines logic and entertainment elements.\nIt is a simple yet complete example of how to develop a basic web application with dynamic and visual elements.",
+        "This project consists of an interactive animation entirely designed in Figma, utilizing the parallax effect to create an immersive visual experience.\nThe animation begins with a landscape composed of several layers that move in sync, generating a sense of depth and dynamism. As the seconds pass, the elements gradually align to form a final composition, where text also appears, seamlessly integrated into the visual narrative.\nThis project reflects my ability to combine visual design with animation techniques to create engaging and functional pieces, ideal for capturing the user's attention.",
       technologies: ["Figma"],
     },
     {
@@ -97,7 +97,7 @@ const projectsData = {
     },
     {
       id: 3,
-      name: "Figma Parallax",
+      name: "Animación de Figma",
       image: project3Image,
       liveDemoLink:
         "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=0%3A1&node-id=2800-197&viewport=779%2C80%2C0.07&t=2xw7AL3OgnOQZ3dl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2800%3A197",
@@ -105,7 +105,7 @@ const projectsData = {
         "https://www.figma.com/design/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=0-1&t=Gxxa0WdJihWBUHb1-1",
       mockup: mockup3Image,
       description:
-        "Este proyecto es un ejercicio práctico diseñado para aplicar herramientas básicas de diseño web, desarrollo frontend y bases de datos. Su objetivo es reforzar conocimientos fundamentales en programación y diseño.\nEl proyecto consiste en una plataforma donde los usuarios deben registrarse para acceder al juego. Una vez registrados, pueden participar en el juego interactivo, que combina elementos de lógica y entretenimiento.\nEs un ejemplo simple pero completo de cómo desarrollar una aplicación web básica con elementos dinámicos y visuales.",
+        "Este proyecto consiste en una animación interactiva diseñada íntegramente en Figma, utilizando el efecto parallax para crear una experiencia visual inmersiva.\nLa animación comienza con un paisaje compuesto por varias capas que se desplazan de manera sincronizada, generando una sensación de profundidad y dinamismo. A medida que transcurren los segundos, los elementos se posicionan gradualmente para formar una composición final, en la que también aparecen textos cuidadosamente integrados en la narrativa visual.\nEste proyecto refleja mi habilidad para combinar diseño visual con técnicas de animación para crear piezas atractivas y funcionales, ideales para captar la atención del usuario.",
       technologies: ["Figma"],
     },
     {
