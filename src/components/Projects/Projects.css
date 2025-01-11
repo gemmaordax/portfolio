@@ -24,6 +24,7 @@
     justify-content: center;
     padding: 2rem;
     overflow-x: auto;
+    justify-content: flex-start;
     scroll-snap-type: x mandatory;
 }
 
@@ -65,6 +66,8 @@
 
 .project-card:hover .project-title {
     display: none;
+    transform: rotate(0);
+
 }
 
 .project-card .project-hover {

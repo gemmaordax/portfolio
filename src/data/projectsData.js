@@ -4,6 +4,7 @@ import project2Image from "../assets/projects/project2_h.jpeg";
 import project3Image from "../assets/projects/project3_h.png";
 import project4Image from "../assets/projects/project4_h.png";
 import project5Image from "../assets/projects/project5_h.png";
+import project6Image from "../assets/projects/project6_h.png";
 
 // MOCKUP IMAGES
 import mockup1Image from "../assets/projects/mockup1.png";
@@ -11,6 +12,7 @@ import mockup2Image from "../assets/projects/mockup2.png";
 import mockup3Image from "../assets/projects/mockup3.png";
 import mockup4Image from "../assets/projects/mockup4.png";
 import mockup5Image from "../assets/projects/mockup5.png";
+import mockup6Image from "../assets/projects/mockup6.png";
 
 const projectsData = {
   en: [
@@ -38,6 +40,19 @@ const projectsData = {
     },
     {
       id: 3,
+      name: "Figma Food",
+      image: project6Image,
+      liveDemoLink:
+        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=180%3A8&node-id=2896-2&viewport=-9%2C1017%2C0.33&t=0EiaVGCEjssSRUeD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2896%3A2",
+      figmaLink:
+        "https://www.figma.com/design/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=180-8",
+      mockup: mockup6Image,
+      description:
+        "This project is an interactive experience designed in Figma, focused on manipulating object positions and rotations to create a dynamic and engaging environment.\nThe project features smooth transitions and synchronized animations that showcase Figma's interactive capabilities while maintaining a cohesive visual aesthetic. The rotations and movements of the elements generate ever-changing visual compositions.\nThis work exemplifies how I use design tools to create interactive interfaces, with a focus on usability and aesthetics, ideal for capturing the user’s attention and exploring new forms of visual storytelling.",
+      technologies: ["Figma"],
+    },
+    {
+      id: 4,
       name: "Figma Animation",
       image: project3Image,
       liveDemoLink:
@@ -50,7 +65,7 @@ const projectsData = {
       technologies: ["Figma"],
     },
     {
-      id: 4,
+      id: 5,
       name: "Escape Room",
       image: project4Image,
       liveDemoLink: "https://gemmaordax.github.io/escape_room/",
@@ -61,7 +76,7 @@ const projectsData = {
       technologies: ["JavaScript", "CSS", "Firebase", "Jira"],
     },
     {
-      id: 5,
+      id: 6,
       name: "Mini Game",
       image: project5Image,
       liveDemoLink: "https://gemmaordax.github.io/mini_game/",
@@ -97,7 +112,20 @@ const projectsData = {
     },
     {
       id: 3,
-      name: "Animación de Figma",
+      name: "Figma Comida",
+      image: project6Image,
+      liveDemoLink:
+        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=180%3A8&node-id=2896-2&viewport=-9%2C1017%2C0.33&t=0EiaVGCEjssSRUeD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2896%3A2",
+      figmaLink:
+        "https://www.figma.com/design/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=180-8",
+      mockup: mockup6Image,
+      description:
+        "Este proyecto es una experiencia interactiva diseñada en Figma, centrada en la manipulación de posiciones y rotaciones de objetos para crear un entorno dinámico y atractivo.\nEl proyecto incorpora transiciones fluidas y animaciones sincronizadas que destacan las capacidades interactivas de Figma, al mismo tiempo que mantiene una estética visual coherente. Las rotaciones y los desplazamientos de los elementos generan composiciones visuales en constante transformación.\nEste trabajo es un ejemplo de cómo utilizo las herramientas de diseño para crear interfaces interactivas, con un enfoque en la usabilidad y en la estética, ideales para mantener la atención del usuario y explorar nuevas formas de narrativa visual.",
+      technologies: ["Figma"],
+    },
+    {
+      id: 4,
+      name: "Figma Animación",
       image: project3Image,
       liveDemoLink:
         "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=0%3A1&node-id=2800-197&viewport=779%2C80%2C0.07&t=2xw7AL3OgnOQZ3dl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2800%3A197",
@@ -109,7 +137,7 @@ const projectsData = {
       technologies: ["Figma"],
     },
     {
-      id: 4,
+      id: 5,
       name: "Escape Room",
       image: project4Image,
       liveDemoLink: "https://gemmaordax.github.io/escape_room/",
@@ -120,7 +148,7 @@ const projectsData = {
       technologies: ["JavaScript", "CSS", "Firebase", "Jira"],
     },
     {
-      id: 5,
+      id: 6,
       name: "Mini Juego",
       image: project5Image,
       liveDemoLink: "https://gemmaordax.github.io/mini_game/",
