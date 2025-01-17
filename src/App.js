@@ -1,10 +1,10 @@
 /**
  * @file App.js
- * @description Este componente principal de la aplicación maneja el estado global del tema (oscuro o claro), 
- * la apertura del menú de navegación, y la gestión del cambio de favicon basado en el tema. 
- * Además, incluye todos los componentes de la aplicación como Navbar, About, Skills, Projects, Contact, Footer, 
+ * @description Este componente principal de la aplicación maneja el estado global del tema (oscuro o claro),
+ * la apertura del menú de navegación, y la gestión del cambio de favicon basado en el tema.
+ * Además, incluye todos los componentes de la aplicación como Navbar, About, Skills, Projects, Contact, Footer,
  * y el botón para volver al inicio.
- * 
+ *
  * @author Gemma Ordax
  */
 import React, { useState, useEffect } from "react";
@@ -55,16 +55,19 @@ function App() {
   // Cambia el favicon en función del modo
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    const favicon = document.querySelector("link[rel='icon']");
+    const favicon = document.querySelector("#favicon");
+
     const updateFavicon = () => {
       if (mediaQuery.matches) {
-        favicon.href = "/favicon_dark.ico";
+        favicon.href = process.env.PUBLIC_URL + "/favicon_dark.ico";
       } else {
-        favicon.href = "/favicon_light.ico";
+        favicon.href = process.env.PUBLIC_URL + "/favicon_light.ico";
       }
     };
-    updateFavicon();
+
+    updateFavicon(); // Cambia el favicon al cargar la página
     mediaQuery.addEventListener("change", updateFavicon);
+
     return () => {
       mediaQuery.removeEventListener("change", updateFavicon);
     };

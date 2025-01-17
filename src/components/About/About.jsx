@@ -31,6 +31,10 @@ const About = () => {
       setIsClicked(false);
     }, 3000);
   };
+  
+  // Define el archivo de CV según el idioma seleccionado
+  const cvFileName =
+    language === "en" ? "CV_GemmaOrdax_EN.pdf" : "CV_GemmaOrdax.pdf";
   return (
     <div className="about">
       <div className="about-container">
@@ -79,7 +83,7 @@ const About = () => {
               </a>
             </div>
             <a
-             href={`${process.env.PUBLIC_URL}/CV_GemmaOrdax.pdf`}
+              href={`${process.env.PUBLIC_URL}/${cvFileName}`}
               className={`about-cv-button ${isClicked ? "clicked" : ""}`}
               onClick={handleCVDownload}
               download
