@@ -1,7 +1,7 @@
 // PROJECT IMAGES
 import project1Image from "../assets/projects/project1_h.png";
 import project2Image from "../assets/projects/project2_h.jpeg";
-import project3Image from "../assets/projects/project3_h.png";
+import project3Image from "../assets/projects/project7_h.png";
 import project4Image from "../assets/projects/project4_h.png";
 import project5Image from "../assets/projects/project5_h.png";
 import project6Image from "../assets/projects/project6_h.png";
@@ -9,7 +9,7 @@ import project6Image from "../assets/projects/project6_h.png";
 // MOCKUP IMAGES
 import mockup1Image from "../assets/projects/mockup1.png";
 import mockup2Image from "../assets/projects/mockup2.png";
-import mockup3Image from "../assets/projects/mockup3.png";
+import mockup3Image from "../assets/projects/mockup7.png";
 import mockup4Image from "../assets/projects/mockup4.png";
 import mockup5Image from "../assets/projects/mockup5.png";
 import mockup6Image from "../assets/projects/mockup6.png";
@@ -40,6 +40,19 @@ const projectsData = {
     },
     {
       id: 3,
+      name: "Figma Nike",
+      image: project3Image,
+      liveDemoLink:
+        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=2995%3A4646&node-id=2995-5481&p=f&viewport=-19%2C392%2C0.17&t=xUee0O3QyElCUoh8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2995%3A5481",
+      figmaLink:
+        "https://www.figma.com/design/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=2995-4646",
+      mockup: mockup3Image,
+      description:
+        "This Nike web prototype focuses on visual experience and user interaction, showcasing the brand's most iconic sneakers through smooth animations and engaging visual effects.\nThe mobile version is currently under development, aiming to replicate the immersive design adapted to smaller screens.\nThis project highlights my ability to create digital prototypes that combine visual design, interactivity, and usability, delivering an impactful, user-centered experience.",
+      technologies: ["Figma"],
+    },
+    {
+      id: 4,
       name: "Figma Food",
       image: project6Image,
       liveDemoLink:
@@ -49,19 +62,6 @@ const projectsData = {
       mockup: mockup6Image,
       description:
         "This project is an interactive experience designed in Figma, focused on manipulating object positions and rotations to create a dynamic and engaging environment.\nThe project features smooth transitions and synchronized animations that showcase Figma's interactive capabilities while maintaining a cohesive visual aesthetic. The rotations and movements of the elements generate ever-changing visual compositions.\nThis work exemplifies how I use design tools to create interactive interfaces, with a focus on usability and aesthetics, ideal for capturing the user’s attention and exploring new forms of visual storytelling.",
-      technologies: ["Figma"],
-    },
-    {
-      id: 4,
-      name: "Figma Animation",
-      image: project3Image,
-      liveDemoLink:
-        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=0%3A1&node-id=2800-197&viewport=779%2C80%2C0.07&t=2xw7AL3OgnOQZ3dl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2800%3A197",
-      figmaLink:
-        "https://www.figma.com/design/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=0-1&t=Gxxa0WdJihWBUHb1-1",
-      mockup: mockup3Image,
-      description:
-        "This project consists of an interactive animation entirely designed in Figma, utilizing the parallax effect to create an immersive visual experience.\nThe animation begins with a landscape composed of several layers that move in sync, generating a sense of depth and dynamism. As the seconds pass, the elements gradually align to form a final composition, where text also appears, seamlessly integrated into the visual narrative.\nThis project reflects my ability to combine visual design with animation techniques to create engaging and functional pieces, ideal for capturing the user's attention.",
       technologies: ["Figma"],
     },
     {
@@ -112,6 +112,19 @@ const projectsData = {
     },
     {
       id: 3,
+      name: "Figma Nike",
+      image: project3Image,
+      liveDemoLink:
+        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=2995%3A4646&node-id=2995-5481&p=f&viewport=-19%2C392%2C0.17&t=xUee0O3QyElCUoh8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2995%3A5481",
+      figmaLink:
+        "https://www.figma.com/design/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=2995-4646",
+      mockup: mockup3Image,
+      description:
+        "Este prototipo de página web de Nike se centra en la experiencia visual y la interacción del usuario, presentando los modelos de zapatillas más icónicos a través de animaciones suaves y efectos visuales atractivos.\nActualmente, se está desarrollando la versión móvil, que replicará el diseño inmersivo adaptado a pantallas pequeñas.\nEste proyecto destaca mi habilidad para crear prototipos digitales que combinan diseño visual, interactividad y usabilidad, ofreciendo una experiencia impactante y centrada en el usuario.",
+      technologies: ["Figma"],
+    },
+    {
+      id: 4,
       name: "Figma Comida",
       image: project6Image,
       liveDemoLink:
@@ -121,19 +134,6 @@ const projectsData = {
       mockup: mockup6Image,
       description:
         "Este proyecto es una experiencia interactiva diseñada en Figma, centrada en la manipulación de posiciones y rotaciones de objetos para crear un entorno dinámico y atractivo.\nEl proyecto incorpora transiciones fluidas y animaciones sincronizadas que destacan las capacidades interactivas de Figma, al mismo tiempo que mantiene una estética visual coherente. Las rotaciones y los desplazamientos de los elementos generan composiciones visuales en constante transformación.\nEste trabajo es un ejemplo de cómo utilizo las herramientas de diseño para crear interfaces interactivas, con un enfoque en la usabilidad y en la estética, ideales para mantener la atención del usuario y explorar nuevas formas de narrativa visual.",
-      technologies: ["Figma"],
-    },
-    {
-      id: 4,
-      name: "Figma Animación",
-      image: project3Image,
-      liveDemoLink:
-        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=0%3A1&node-id=2800-197&viewport=779%2C80%2C0.07&t=2xw7AL3OgnOQZ3dl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2800%3A197",
-      figmaLink:
-        "https://www.figma.com/design/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=0-1&t=Gxxa0WdJihWBUHb1-1",
-      mockup: mockup3Image,
-      description:
-        "Este proyecto consiste en una animación interactiva diseñada íntegramente en Figma, utilizando el efecto parallax para crear una experiencia visual inmersiva.\nLa animación comienza con un paisaje compuesto por varias capas que se desplazan de manera sincronizada, generando una sensación de profundidad y dinamismo. A medida que transcurren los segundos, los elementos se posicionan gradualmente para formar una composición final, en la que también aparecen textos cuidadosamente integrados en la narrativa visual.\nEste proyecto refleja mi habilidad para combinar diseño visual con técnicas de animación para crear piezas atractivas y funcionales, ideales para captar la atención del usuario.",
       technologies: ["Figma"],
     },
     {

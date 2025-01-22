@@ -2,7 +2,7 @@
  * @file About.js
  * @description Componente "About" en React.
  * Este archivo contiene la implementación de una sección de "Sobre mí" con una breve descripción, redes sociales, y un botón de descarga de CV.
- * 
+ *
  * @author Gemma Ordax
  */
 import React, { useState } from "react";
@@ -31,10 +31,10 @@ const About = () => {
       setIsClicked(false);
     }, 3000);
   };
-  
+
   // Define el archivo de CV según el idioma seleccionado
   const cvFileName =
-    language === "en" ? "CV_GemmaOrdax_EN.pdf" : "CV_GemmaOrdax.pdf";
+    language === "en" ? "CV_Gemma Ordax_EN.pdf" : "CV_Gemma Ordax.pdf";
   return (
     <div className="about">
       <div className="about-container">
@@ -54,9 +54,7 @@ const About = () => {
               loop
             />
           </div>
-          <p className="about-description">
-          {t.aboutDescription}
-          </p>
+          <p className="about-description">{t.aboutDescription}</p>
           {/* Redes sociales y botón de CV */}
           <div className="about-socials">
             <div className="about-socials-icons">
