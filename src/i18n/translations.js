@@ -10,7 +10,7 @@ const translations = {
     aboutMe: "I'm a ",
     roles: [
       "Web Developer",
-      "UI/UX Designer",
+      "UI Designer",
       "Video Editor",
       "Graphic Designer",
     ],
@@ -19,7 +19,7 @@ const translations = {
     resume: "RESUME",
     servicesRoles: [
       { name: "Front End\nDevelopment", icon: "FaCode" },
-      { name: "UI/UX\nDesign", icon: "FaFigma" },
+      { name: "UI Design", icon: "FaFigma" },
       { name: "Graphic\nDesign", icon: "FaPen" },
       { name: "Photograph", icon: "FaCameraRetro" },
       { name: "Video\nEdition/Record", icon: "FaVideo" },
@@ -47,7 +47,7 @@ const translations = {
     aboutMe: "Soy ",
     roles: [
       "Desarolladora Web",
-      "Diseñadora UI/UX",
+      "Diseñadora UI",
       "Editora de Vídeo",
       "Diseñadora Gráfica",
     ],
@@ -56,7 +56,7 @@ const translations = {
     resume: "RESUMEN",
     servicesRoles: [
       { name: "Desarrollo\nFront End", icon: "FaCode" },
-      { name: "Diseño\nUI/UX", icon: "FaFigma" },
+      { name: "Diseño UI", icon: "FaFigma" },
       { name: "Diseño\nGráfico", icon: "FaPen" },
       { name: "Fotografía", icon: "FaCameraRetro" },
       { name: "Edición/Grabación\nde Video", icon: "FaVideo" },

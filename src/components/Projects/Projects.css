@@ -139,6 +139,7 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    padding-top: 1rem;
 }
 
 .project-buttons .live-demo-btn {
@@ -213,10 +214,6 @@
 }
 
 /* Technologies Section */
-.project-technologies {
-    margin-bottom: 0.5rem;
-}
-
 .project-technologies h3 {
     font-size: 1.5rem;
     color: var(--clr-primary);
@@ -270,7 +267,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     text-align: left;
     align-items: flex-start;
     word-wrap: break-word;
@@ -331,6 +328,7 @@
 
     .project-info {
         max-width: 100%;
+        padding-bottom: 2rem;
     }
 
     .project-mockup img {
@@ -360,6 +358,7 @@
         flex: unset;
         width: 100%;
         text-align: center;
+        order: 1;
     }
 
     .project-info h2 {
@@ -389,6 +388,7 @@
         width: auto;
         height: auto;
         padding: 0;
+        order: 2;
     }
 
     .project-card {
