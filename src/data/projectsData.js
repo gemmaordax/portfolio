@@ -25,7 +25,7 @@ const projectsData = {
       mockup: mockup1Image,
       description:
         "This project is a visual development proposal for a web application called iPark. The website is in the development phase and is not yet finished, but it presents a basic and functional structure of the application.\nThe application includes several pages, some of which are hidden, such as the /payment route, which are still under development and not visible in the current version. These pages are intended for payment functionality, but are not yet implemented.",
-      technologies: ["React", "CSS", "Slack"],
+      technologies: ["React", "CSS", "Slack", "Figma"],
     },
     {
       id: 2,
@@ -97,7 +97,7 @@ const projectsData = {
       mockup: mockup1Image,
       description:
         "Este proyecto es una propuesta de desarrollo visual para una aplicación web llamada iPark. El sitio web está en fase de desarrollo y aún no está terminado, pero presenta una estructura básica y funcional de la aplicación.\nLa aplicación incluye varias páginas, algunas de las cuales están ocultas, como la ruta /payment, que aún están en desarrollo y no son visibles en la versión actual. Estas páginas están destinadas a la funcionalidad de pagos, pero aún no están implementadas.",
-      technologies: ["React", "CSS", "Slack"],
+      technologies: ["React", "CSS", "Slack", "Figma"],
     },
     {
       id: 2,
