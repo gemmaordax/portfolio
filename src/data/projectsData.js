@@ -43,12 +43,14 @@ const projectsData = {
       name: "Figma Nike",
       image: project3Image,
       liveDemoLink:
-        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=2995%3A4646&node-id=2995-5481&p=f&viewport=-19%2C392%2C0.17&t=xUee0O3QyElCUoh8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2995%3A5481",
+        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=2995-5481&t=Eroo4n8KyoGI0Xrm-1",
+      liveDemoMobileLink:
+        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=3062-1846&t=Eroo4n8KyoGI0Xrm-1&starting-point-node-id=3062%3A1846",
       figmaLink:
         "https://www.figma.com/design/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=2995-4646",
       mockup: mockup3Image,
       description:
-        "This Nike web prototype focuses on visual experience and user interaction, showcasing the brand's most iconic sneakers through smooth animations and engaging visual effects.\nThe mobile version is currently under development, aiming to replicate the immersive design adapted to smaller screens.\nThis project highlights my ability to create digital prototypes that combine visual design, interactivity, and usability, delivering an impactful, user-centered experience.",
+        "This Nike web prototype focuses on visual experience and user interaction, showcasing the brand's most iconic sneakers through smooth animations and engaging visual effects.\nThe mobile version adapts the immersive design to smaller screens, offering an equally dynamic and engaging experience.\nThis project highlights my ability to create digital prototypes that combine visual design, interactivity, and usability, delivering an impactful, user-centered experience.",
       technologies: ["Figma"],
     },
     {
@@ -115,12 +117,14 @@ const projectsData = {
       name: "Figma Nike",
       image: project3Image,
       liveDemoLink:
-        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?page-id=2995%3A4646&node-id=2995-5481&p=f&viewport=-19%2C392%2C0.17&t=xUee0O3QyElCUoh8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2995%3A5481",
+        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=2995-5481&t=Eroo4n8KyoGI0Xrm-1",
+      liveDemoMobileLink:
+        "https://www.figma.com/proto/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=3062-1846&t=Eroo4n8KyoGI0Xrm-1&starting-point-node-id=3062%3A1846",
       figmaLink:
         "https://www.figma.com/design/g5uxtfAFhmuC1wjG3NzmIZ/Projects?node-id=2995-4646",
       mockup: mockup3Image,
       description:
-        "Este prototipo de página web de Nike se centra en la experiencia visual y la interacción del usuario, presentando los modelos de zapatillas más icónicos a través de animaciones suaves y efectos visuales atractivos.\nActualmente, se está desarrollando la versión móvil, que replicará el diseño inmersivo adaptado a pantallas pequeñas.\nEste proyecto destaca mi habilidad para crear prototipos digitales que combinan diseño visual, interactividad y usabilidad, ofreciendo una experiencia impactante y centrada en el usuario.",
+        "Este prototipo de página web de Nike se centra en la experiencia visual y la interacción del usuario, presentando los modelos de zapatillas más icónicos a través de animaciones suaves y efectos visuales atractivos.\nLa versión móvil adapta el diseño inmersivo a pantallas más pequeñas para ofrecer una experiencia igualmente dinámica y atractiva.\nEste proyecto destaca mi habilidad para crear prototipos digitales que combinan diseño visual, interactividad y usabilidad, ofreciendo una experiencia impactante y centrada en el usuario.",
       technologies: ["Figma"],
     },
     {

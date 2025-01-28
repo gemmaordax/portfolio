@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FaCode, FaFigma } from "react-icons/fa";
+import { FaCode, FaFigma, FaMobileAlt, FaLaptop } from "react-icons/fa";
 import projectsData from "../../data/projectsData";
 import "./Projects.css";
 import { useLanguage } from "../../context/LanguageContext";
@@ -8,6 +8,7 @@ import translations from "../../i18n/translations";
 function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
     const [projects, setProjects] = useState([]);
+    const [showExtraLinks, setShowExtraLinks] = useState(false);
     const detailsRef = useRef(null);
 
     const { language } = useLanguage();
@@ -17,14 +18,23 @@ function Projects() {
     useEffect(() => {
         const selectedProjects = projectsData[language];
         setProjects(selectedProjects || []);
-       setSelectedProject(null); 
+        setSelectedProject(null);
     }, [language]);
 
     const handleProjectClick = (project) => {
         setSelectedProject(project);
+        setShowExtraLinks(false); 
         setTimeout(() => {
             detailsRef.current.scrollIntoView({ behavior: "smooth" });
         }, 0);
+    };
+
+    const handleLiveDemoClick = (project) => {
+        if (project.liveDemoMobileLink) {
+            setShowExtraLinks(!showExtraLinks);
+        } else {
+            window.open(project.liveDemoLink, "_blank");
+        }
     };
 
     return (
@@ -53,16 +63,34 @@ function Projects() {
                                 </ul>
                             </div>
                             <div className="project-buttons">
-                                {selectedProject.liveDemoLink && (
-                                    <a
-                                        href={selectedProject.liveDemoLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                <div className="button-wrapper">
+                                    <button
                                         className="live-demo-btn"
+                                        onClick={() => handleLiveDemoClick(selectedProject)}
                                     >
                                         <span>LIVE DEMO</span>
-                                    </a>
-                                )}
+                                    </button>
+                                    {showExtraLinks && selectedProject.liveDemoMobileLink && (
+                                        <div className="extra-buttons">
+                                            <a
+                                                href={selectedProject.liveDemoMobileLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="extra-btn"
+                                            >
+                                                <FaMobileAlt />
+                                            </a>
+                                            <a
+                                                href={selectedProject.liveDemoLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="extra-btn"
+                                            >
+                                                <FaLaptop />
+                                            </a>
+                                        </div>
+                                    )}
+                                </div>
                                 {selectedProject.githubLink && (
                                     <a
                                         href={selectedProject.githubLink}
